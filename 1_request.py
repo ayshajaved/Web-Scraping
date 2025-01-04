@@ -17,3 +17,5 @@ print(response.headers)
 print(response.encoding)
 print(response.cookies) #cookies by server
 print(response.elapsed) #To measure server response time.
+
+
