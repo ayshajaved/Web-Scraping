@@ -11,3 +11,11 @@ Web scraping can be used for a variety of purposes, such as:
 2.Content aggregation: Web scraping can be used to aggregate content from multiple websites and present it in a single location.
 3.Price comparison: Web scraping can be used to compare prices of products and services across different websites.
 
+Webscraping through python:
+1.Beautiful soup
+2.Selenium
+3.scrapy
+
+WebScrping of a website is technically illegal
+we can view the website and copy the data and paste it in our own website by letting know the permissons by writting robots.txt after the website name so that to know
+
