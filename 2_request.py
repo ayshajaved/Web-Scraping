@@ -4,6 +4,14 @@ from bs4 import BeautifulSoup
 url = "https://www.wikipedia.org/"
 
 response = requests.get(url)
+'''
+There are 4 objects of beautifulsoup
+-->tags tags of the html doc
+-->navigable strings content in the tags
+-->beautiful soup
+-->comments A special type of NavigableString that represents comments in the HTML or XML document.
+-->ResultSet object, which is essentially a list of all matching elements.
+'''
 if response.status_code == 200:
     print("Success")
     content = response.content
@@ -18,5 +26,14 @@ if response.status_code == 200:
     print(html.title)      #gives the title of the webpage
     print(html.title.text) #gives the text inside the title tag
     print(html.title.string) #gives the text inside the title tag
+    resultObject = html.find_all('p') #Result object of beautiful soup returning all the paragraphs
+    for result in resultObject: 
+        print(result.text) #Printing all paragraphs
+    print(resultObject[1])
 else:
     print("Error")
+
+'''
+
+
+'''
