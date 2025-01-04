@@ -1,0 +1,13 @@
+Web scraping is an automatic method to obtain large amounts of data from
+websites.
+Web scraping extracts underlying HTML code and, with it, data stored in a
+database. The scraper can then replicate entire website content elsewhere.
+The data can be of two types:
+1.Structured data: This type of data is organized in a specific format, such as a table or a list. It is easy to extract and manipulate
+2.Unstructured data: This type of data is not organized in a specific format and is difficult to extract and manipulate. It is often found in the form of text, images, or videos.
+
+Web scraping can be used for a variety of purposes, such as:
+1.Data analysis: Web scraping can be used to collect data from websites and analyze it to gain insights and make informed decisions.
+2.Content aggregation: Web scraping can be used to aggregate content from multiple websites and present it in a single location.
+3.Price comparison: Web scraping can be used to compare prices of products and services across different websites.
+
