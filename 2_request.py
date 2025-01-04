@@ -37,8 +37,3 @@ if response.status_code == 200:
     print(resultObject[1])
 else:
     print("Error")
-
-'''
-
-
-'''
