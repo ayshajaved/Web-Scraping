@@ -76,16 +76,6 @@ Automatically manages requests, retries, and rate limits.
 Usage Example:
 Scrapy projects are organized into spiders. A minimal spider would look like this:
 python
-Copy code
-import scrapy
-
-class ExampleSpider(scrapy.Spider):
-    name = "example"
-    start_urls = ["https://example.com"]
-
-    def parse(self, response):
-        title = response.xpath('//title/text()').get()
-        print(f"Page title: {title}")
 Best Practices for Web Scraping:
 Respect Website Policies:
 
