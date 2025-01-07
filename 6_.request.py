@@ -19,4 +19,7 @@ print(div)
 data = yf.download("AAPL MSFT GOOGL", start="2023-01-01", end="2023-12-31")
 print(data)
 
+'''
+www.finance.yahoo.com/quote/{ticker} now replace the ticker placeholder with the ticker eg, AAPL(apple), TSLA(tesla),MSFT(microsoft corporation)
+'''
 
