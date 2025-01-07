@@ -5,7 +5,7 @@ yfinance (Yahoo Finance) is a Python library that simplifies fetching stock mark
 import yfinance as yf
 #two methods of yf --> Ticker and download
 data = yf.Ticker("AAPL")  #it is the method that gives the information of the one stock or ticker symbol, returns a python object
-# print(data.info)  #it is the method that gives the information of the one stock or ticker
+# print(data.info)  #it is the method that gives the information of the one stock or ticker Returns a dictionary of detailed information about the stock, including market cap, sector, website, company description, etc.
 data_ = data.history(period="1d")  #gives the Returns a pandas DataFrame containing historical price data for the specified period
 print(data_)
 #Dividends: Provide direct financial rewards to shareholders.
