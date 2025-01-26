@@ -2,8 +2,9 @@ import selenium
 from selenium import webdriver                 #importing webdrivers like chrome, firefox, IE, remote(for remote testing)
 from selenium.webdriver.common.keys import Keys#Importing keys like all the keyboard keys 
 from selenium.webdriver.common.by import By    #By for searching elements by name, id, xpath, class name, css selector
-from selenium.webdriver.support.ui import WebDriverWait 
-import time
+from selenium.webdriver.support.ui import WebDriverWait #dynamic way to wait for an element to appear
+from selenium.webdriver.support import expected_conditions as EC #conditions for waiting
+import time                                    #Useful only for static pages
 
 class chromeAutomation():
     def __init__(self):
@@ -19,10 +20,19 @@ class chromeAutomation():
             assert "Python" in self.driver.title#asserting that the title of the page contains python
         except AssertionError:                  #error if title is not present
             print("Title is not correct")
+        
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.NAME, "q"))) #waiting for the search bar to appear
         self.search = self.driver.find_element(By.NAME, "q")
         self.search.send_keys("python")         #searching for python
         self.search.send_keys(Keys.RETURN)#pressing enter after searching python
-        time.sleep(10)                          #waiting for 10 seconds
+
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "content")))#Wait for the content to be loaded
+        print("Search results are loaded.")
+
+        main_content = self.driver.find_element(By.ID, "content")
+        print(main_content.text)
+       
+        # time.sleep(10)                          #waiting for 10 seconds
         # self.search.clear()                   #clearing the search bar 
     def close(self):
         # self.driver.close()                   #closing the browser
