@@ -1,3 +1,6 @@
+'''
+Selenium is the module in python that is actually used for software testing. It is used to automate the web browsers. So, we can do webScraping through selenium, getting data in the html format from the websites and then parsing and using it through beautiful soup, processing or storing it through pandas.
+'''
 import selenium                               
 from selenium import webdriver                 #importing webdrivers like chrome, firefox, IE, remote(for remote testing)
 from selenium.webdriver.common.keys import Keys#Importing keys like all the keyboard keys 
